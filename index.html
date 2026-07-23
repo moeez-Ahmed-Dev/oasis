@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Backyard Oasis Pools — Premium Refinishing & ICF Pool Construction | Coastal GA & NE FL</title>
+<meta name="description" content="Official website for Backyard Oasis Pools LLC. EcoFinish polyFIBRO fiberglass & aquaBRIGHT gunite pool refinishing and custom ICF pool construction serving Darien, Brunswick, St. Simons, Golden Isles, and Jacksonville.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700;9..144,900&family=Sora:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --night: #0B051D;
+    --night2: #140A33;
+    --card-bg: rgba(25, 14, 58, 0.65);
+    --card-border: rgba(255, 255, 255, 0.12);
+    --violet: #7B2FF7;
+    --pink: #FF2E7E;
+    --electric: #00F5D4;
+    --cyan-glow: #00D8F6;
+    --gold: #FFC84C;
+    --foam: #FFFFFF;
+    --foam-muted: rgba(255, 255, 255, 0.78);
+    --line: rgba(255, 255, 255, 0.14);
+    --display: 'Fraunces', serif;
+    --body: 'Sora', sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+
+    --logo-photo: url('images/site_image_1.jpg');
+    --hero-photo: url('images/site_image_21.jpg');
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body {
+    background: var(--night);
+    color: var(--foam);
+    font-family: var(--body);
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; border: none; outline: none; }
+
+  /* Ambient Canvas Aurora Blobs */
+  .aurora { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+  .aurora span {
+    position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.45; mix-blend-mode: screen;
+    animation: blobMove 22s ease-in-out infinite alternate;
+  }
+  .aurora .b1 { width: 50vw; height: 50vw; background: var(--violet); top: -15%; left: -12%; animation-duration: 28s; }
+  .aurora .b2 { width: 45vw; height: 45vw; background: var(--pink); top: 35%; right: -12%; animation-duration: 22s; animation-delay: 2s; }
+  .aurora .b3 { width: 40vw; height: 40vw; background: var(--electric); bottom: -12%; left: 25%; animation-duration: 26s; animation-delay: 4s; }
+  
+  @keyframes blobMove {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(6%, 8%) scale(1.12); }
+    100% { transform: translate(-6%, -4%) scale(0.92); }
+  }
+
+  .grain {
+    position: fixed; inset: 0; z-index: 1; pointer-events: none; opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Navigation Bar */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 5vw;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  nav.scrolled {
+    background: rgba(11, 5, 29, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 12px 5vw;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.8);
+    border-bottom: 1px solid var(--line);
+  }
+  .logo {
+    display: flex; align-items: center; gap: 0.8rem;
+    font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-spacing: 0.01em;
+  }
+  .logo-mark {
+    width: 38px; height: 38px; border-radius: 12px;
+    background-image: var(--logo-photo); background-size: cover; background-position: center;
+    border: 1px solid var(--line);
+    position: relative; overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 245, 212, 0.3);
+  }
+  .logo-mark::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.65) 50%, transparent 70%);
+    background-size: 250% 250%;
+    animation: sheen 3.5s ease-in-out infinite;
+  }
+  @keyframes sheen { 0%{background-position: 200% 200%;} 100%{background-position: -50% -50%;} }
+  
+  .logo span {
+    background: linear-gradient(100deg, var(--electric), var(--pink) 50%, var(--gold));
+    background-size: 220% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: shimmerText 6s linear infinite;
+  }
+  @keyframes shimmerText { to { background-position: -220% 0; } }
+
+  .navlinks { display: flex; gap: 2rem; font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
+  .navlinks a { opacity: 0.8; transition: opacity 0.25s, color 0.25s; position: relative; padding-bottom: 4px; }
+  .navlinks a::after {
+    content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 2px; border-radius: 2px;
+    background: linear-gradient(90deg, var(--electric), var(--pink));
+    transition: width 0.35s ease;
+  }
+  .navlinks a:hover { opacity: 1; color: var(--electric); }
+  .navlinks a:hover::after { width: 100%; }
+
+  .nav-right { display: flex; align-items: center; gap: 1.2rem; }
+  .phone-link {
+    font-family: var(--mono); font-size: 0.85rem; color: var(--gold); font-weight: 600;
+    display: flex; align-items: center; gap: 0.4rem; transition: color 0.3s;
+  }
+  .phone-link:hover { color: var(--electric); }
+
+  .nav-cta {
+    font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700;
+    padding: 0.65rem 1.3rem; border-radius: 999px; color: var(--night);
+    background: linear-gradient(100deg, var(--electric), var(--gold));
+    background-size: 200% 100%; animation: shimmerText 4s linear infinite reverse;
+    box-shadow: 0 8px 24px -8px rgba(0,245,212,0.5);
+    cursor: pointer; transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 28px -6px rgba(0,245,212,0.7); }
+
+  .hamburger { display: none; background: none; color: var(--foam); font-size: 1.5rem; cursor: pointer; }
+
+  @media (max-width: 920px) {
+    .navlinks { display: none; }
+    .navlinks.mobile-open {
+      display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0;
+      background: rgba(11, 5, 29, 0.96); backdrop-filter: blur(20px); padding: 2rem 5vw;
+      border-bottom: 1px solid var(--line); gap: 1.5rem; font-size: 1rem;
+    }
+    .hamburger { display: block; }
+    .phone-link { display: none; }
+  }
+
+  /* Shared Buttons */
+  .btn {
+    position: relative; overflow: hidden; padding: 1rem 2.2rem; border-radius: 999px;
+    font-size: 0.84rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700;
+    cursor: pointer; border: 1px solid var(--line); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; background: transparent; color: var(--foam);
+  }
+  .btn:hover { transform: translateY(-3px) scale(1.02); }
+  .btn-solid {
+    background: linear-gradient(100deg, var(--pink), var(--violet) 50%, var(--electric));
+    background-size: 220% 100%; border: none; color: var(--foam);
+    animation: shimmerText 6s linear infinite;
+    box-shadow: 0 10px 30px -10px rgba(255, 46, 126, 0.5);
+  }
+  .btn-solid:hover { box-shadow: 0 18px 40px -8px rgba(255, 46, 126, 0.7); }
+  .btn-ghost { background: rgba(255,255,255,0.05); }
+  .btn-ghost:hover { border-color: var(--electric); color: var(--electric); background: rgba(0, 245, 212, 0.08); box-shadow: 0 0 24px -6px rgba(0,245,212,0.4); }
+
+  .ripple {
+    position: absolute; border-radius: 50%; background: rgba(255,255,255,0.5); transform: scale(0);
+    animation: rippleAnim 0.65s ease-out forwards; pointer-events: none;
+  }
+  @keyframes rippleAnim { to { transform: scale(4); opacity: 0; } }
+
+  /* Hero Section */
+  .hero {
+    position: relative; min-height: 100vh; display: flex; align-items: center; z-index: 2;
+    padding: 8.5rem 6vw 5rem; overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0; z-index: -1;
+    background-image: linear-gradient(180deg, rgba(11,5,29,0.45) 0%, rgba(11,5,29,0.92) 85%), var(--hero-photo);
+    background-size: cover; background-position: center;
+    animation: kenburns 25s ease-in-out infinite alternate;
+  }
+  @keyframes kenburns { from { transform: scale(1.04) translate(0,0); } to { transform: scale(1.14) translate(-1%,-1%); } }
+
+  .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3.5rem; align-items: center; width: 100%; max-width: 1350px; margin: 0 auto; }
+  @media (max-width: 960px) { .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+  .eyebrow {
+    font-family: var(--mono); font-size: 0.76rem; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--electric); opacity: 0; animation: riseIn 0.9s 0.2s forwards;
+    display: inline-flex; align-items: center; gap: 10px; margin-bottom: 1.4rem;
+    padding: 0.55rem 1.2rem; border: 1px solid rgba(0,245,212,0.4); border-radius: 999px;
+    background: rgba(0, 245, 212, 0.08); backdrop-filter: blur(8px);
+  }
+  .eyebrow .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--electric); animation: pulseDot 1.5s ease-in-out infinite; }
+
+  h1.hero-title {
+    font-family: var(--display); font-weight: 700; font-size: clamp(2.4rem, 5.2vw, 4.8rem);
+    line-height: 1.05; letter-spacing: -0.01em;
+  }
+  h1.hero-title .word { display: inline-block; opacity: 0; transform: translateY(30px) rotate(1.5deg); animation: wordIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+  @keyframes wordIn { to { opacity: 1; transform: translateY(0) rotate(0); } }
+
+  h1.hero-title em {
+    font-style: italic; font-weight: 600;
+    background: linear-gradient(100deg, var(--electric), var(--gold) 45%, var(--pink));
+    background-size: 220% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: shimmerText 5s linear infinite;
+  }
+
+  .hero-sub {
+    margin-top: 1.6rem; max-width: 48ch; font-size: 1.08rem; line-height: 1.68; color: var(--foam-muted);
+    opacity: 0; animation: riseIn 1s 0.8s forwards;
+  }
+  .hero-cta {
+    margin-top: 2.6rem; display: flex; gap: 1.2rem; flex-wrap: wrap; align-items: center;
+    opacity: 0; animation: riseIn 1s 1s forwards;
+  }
+  @keyframes riseIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pulseDot { 0%,100%{ opacity: 0.4; transform: scale(1); } 50%{ opacity: 1; transform: scale(1.4); } }
+
+  .hero-badges {
+    display: flex; gap: 1.5rem; margin-top: 2.5rem; opacity: 0; animation: riseIn 1s 1.2s forwards; flex-wrap: wrap;
+  }
+  .hero-badge-item {
+    display: flex; align-items: center; gap: 0.6rem; font-size: 0.8rem; color: rgba(255,255,255,0.75);
+    font-family: var(--mono);
+  }
+  .hero-badge-item svg { color: var(--electric); flex-shrink: 0; }
+
+  /* Hero Visual Card */
+  .hero-visual {
+    position: relative; border-radius: 28px; overflow: hidden; aspect-ratio: 4/5;
+    border: 1px solid var(--card-border); box-shadow: 0 35px 80px -25px rgba(0,0,0,0.8);
+    opacity: 0; animation: riseIn 1.1s 0.4s forwards;
+  }
+  .hero-visual img { width: 100%; height: 100%; object-fit: cover; display: block; transform: scale(1.05); animation: kenburns 18s ease-in-out infinite alternate; }
+  .hero-visual .tag {
+    position: absolute; bottom: 1.4rem; left: 1.4rem; right: 1.4rem;
+    background: rgba(15, 7, 38, 0.78); backdrop-filter: blur(12px); border: 1px solid var(--line);
+    border-radius: 18px; padding: 1rem 1.2rem; font-size: 0.85rem;
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  }
+  .hero-visual .tag b { display: block; font-family: var(--display); font-size: 1.1rem; color: var(--electric); }
+  .hero-visual::before {
+    content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: linear-gradient(140deg, rgba(0,245,212,0.18), transparent 40%, rgba(255,46,126,0.15));
+    mix-blend-mode: screen;
+  }
+
+  .scroll-cue {
+    position: absolute; bottom: 2rem; left: 6vw; display: flex; align-items: center; gap: 0.6rem;
+    font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.7;
+  }
+  .scroll-cue .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--electric); animation: pulseDot 1.6s ease-in-out infinite; }
+
+  /* Divider Wave */
+  .divider { position: relative; height: 110px; z-index: 2; margin-top: -30px; }
+  .divider svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .divider path { animation: morphWave 10s ease-in-out infinite; }
+  @keyframes morphWave {
+    0%,100%{ d: path("M0,50 C240,110 480,0 720,50 C960,110 1200,0 1440,50 L1440,140 L0,140 Z"); }
+    50%{ d: path("M0,50 C240,0 480,110 720,50 C960,0 1200,110 1440,50 L1440,140 L0,140 Z"); }
+  }
+
+  /* Section Styling */
+  section { position: relative; z-index: 2; padding: 6.5rem 6vw; }
+  .section-head { max-width: 62ch; margin-bottom: 3.5rem; }
+  .section-head.center { text-align: center; margin-left: auto; margin-right: auto; }
+  
+  .kicker {
+    font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--electric);
+    margin-bottom: 0.9rem; display: inline-block; font-weight: 600;
+  }
+  h2 { font-family: var(--display); font-weight: 700; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.12; }
+  .lede { margin-top: 1.2rem; color: var(--foam-muted); font-size: 1.05rem; line-height: 1.65; max-width: 58ch; }
+
+  .reveal { opacity: 0; transform: translateY(35px); transition: opacity 0.85s ease, transform 0.85s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* Services Section */
+  .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; }
+  @media (max-width: 920px) { .card-grid { grid-template-columns: 1fr; } }
+  
+  .card {
+    position: relative; border-radius: 22px; padding: 2px; overflow: hidden;
+    background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  }
+  .card::before {
+    content: ''; position: absolute; inset: 0; border-radius: 22px; padding: 1px;
+    background: linear-gradient(135deg, var(--electric), var(--pink), var(--gold));
+    background-size: 300% 300%; opacity: 0; transition: opacity 0.4s ease;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude;
+    animation: gradientSpin 6s linear infinite;
+  }
+  .card:hover::before { opacity: 1; }
+  @keyframes gradientSpin { to { background-position: 300% 300%; } }
+
+  .card-inner {
+    position: relative; background: var(--card-bg); border-radius: 21px; padding: 2.4rem 2rem; height: 100%;
+    transition: transform 0.4s ease, background 0.4s ease; display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .card:hover .card-inner { transform: translateY(-8px); background: rgba(30, 16, 70, 0.8); }
+  .card .num { font-family: var(--mono); font-size: 0.8rem; color: var(--electric); font-weight: 600; opacity: 0.9; }
+  .card h3 { font-family: var(--display); font-weight: 700; font-size: 1.45rem; margin: 1rem 0 0.8rem; }
+  .card p { color: var(--foam-muted); font-size: 0.95rem; line-height: 1.62; flex-grow: 1; }
+  .card-features { margin-top: 1.4rem; list-style: none; font-size: 0.82rem; color: rgba(255,255,255,0.7); }
+  .card-features li { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; }
+  .card-features li::before { content: '✓'; color: var(--electric); font-weight: bold; }
+
+  /* Before / After Comparison */
+  .compare-wrap { display: flex; gap: 3.5rem; align-items: center; flex-wrap: wrap; max-width: 1350px; margin: 0 auto; }
+  .compare {
+    position: relative; width: min(620px, 100%); aspect-ratio: 4/3; border-radius: 24px; overflow: hidden;
+    border: 1px solid var(--line); cursor: ew-resize; user-select: none;
+    box-shadow: 0 30px 80px -20px rgba(0,0,0,0.8);
+  }
+  .compare img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .compare .before img { filter: grayscale(0.85) contrast(0.9) brightness(0.72) sepia(0.2); }
+  .compare .after { position: absolute; inset: 0; clip-path: inset(0 50% 0 0); transition: clip-path 0.05s linear; }
+  .compare .label {
+    position: absolute; bottom: 16px; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 0.45rem 0.9rem; border-radius: 999px; z-index: 3;
+    background: rgba(11, 5, 29, 0.82); border: 1px solid var(--line); backdrop-filter: blur(6px);
+  }
+  .compare .before .label { left: 16px; }
+  .compare .after .label { right: 16px; color: var(--electric); border-color: rgba(0,245,212,0.4); }
+  
+  .compare .handle {
+    position: absolute; top: 0; bottom: 0; left: 50%; width: 3px;
+    background: linear-gradient(180deg, var(--electric), var(--pink));
+    box-shadow: 0 0 16px rgba(0,245,212,0.8); z-index: 4;
+  }
+  .compare .handle::after {
+    content: '⇔'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 44px; height: 44px; border-radius: 50%; background: var(--foam); color: var(--night);
+    display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: 800;
+    box-shadow: 0 8px 24px -4px rgba(0,0,0,0.6);
+  }
+  .compare-copy { max-width: 42ch; flex: 1; }
+  .compare-copy p { color: var(--foam-muted); line-height: 1.68; margin-top: 1.2rem; font-size: 1rem; }
+  
+  .badge-tag {
+    display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.9rem; border-radius: 999px;
+    background: rgba(255,200,76,0.12); border: 1px solid rgba(255,200,76,0.3); color: var(--gold);
+    font-size: 0.78rem; font-family: var(--mono); margin-top: 1.5rem;
+  }
+
+  /* EcoFinish Interactive Color Showcase */
+  .color-showcase {
+    background: var(--night2); border-radius: 28px; border: 1px solid var(--line);
+    padding: 4rem 3rem; margin-top: 4rem; position: relative; overflow: hidden;
+  }
+  .color-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: center; }
+  @media (max-width: 900px) { .color-grid { grid-template-columns: 1fr; } }
+
+  .swatch-group { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem; }
+  .swatch-btn {
+    display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1.1rem; border-radius: 999px;
+    background: rgba(255,255,255,0.06); border: 1px solid var(--line); color: var(--foam);
+    font-family: var(--mono); font-size: 0.8rem; cursor: pointer; transition: all 0.3s;
+  }
+  .swatch-btn .circle { width: 16px; height: 16px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.4); }
+  .swatch-btn:hover, .swatch-btn.active {
+    background: rgba(0, 245, 212, 0.15); border-color: var(--electric); color: var(--electric);
+  }
+
+  .color-preview-card {
+    border-radius: 20px; overflow: hidden; position: relative; aspect-ratio: 16/10;
+    border: 1px solid var(--line); box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  }
+  .color-preview-card img { width: 100%; height: 100%; object-fit: cover; transition: opacity 0.4s ease; }
+  .color-info-overlay {
+    position: absolute; bottom: 0; inset-x: 0; padding: 1.5rem;
+    background: linear-gradient(0deg, rgba(11, 5, 29, 0.95), transparent);
+    display: flex; justify-content: space-between; align-items: flex-end;
+  }
+
+  /* ICF Construction Band */
+  .icf { position: relative; overflow: hidden; }
+  .icf-panel {
+    border-radius: 30px; padding: 4.5rem 3.5rem; position: relative; overflow: hidden;
+    background: linear-gradient(135deg, var(--violet), var(--night2) 65%);
+    border: 1px solid var(--card-border);
+  }
+  .icf-panel::before {
+    content: ''; position: absolute; inset: -30%; opacity: 0.25;
+    background: repeating-linear-gradient(115deg, rgba(255,255,255,0.08) 0 2px, transparent 2px 32px);
+    animation: driftPattern 18s linear infinite;
+  }
+  @keyframes driftPattern { from { transform: translate(0,0); } to { transform: translate(-6%, 5%); } }
+
+  .icf-inner { position: relative; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3.5rem; align-items: center; }
+  @media (max-width: 900px) { .icf-inner { grid-template-columns: 1fr; } }
+  
+  .stat-row { display: flex; gap: 2.5rem; margin-top: 2.4rem; flex-wrap: wrap; }
+  .stat b {
+    font-family: var(--display); font-size: 2.4rem; display: block; line-height: 1;
+    background: linear-gradient(100deg, var(--electric), var(--gold));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .stat span { font-size: 0.8rem; color: rgba(255,255,255,0.75); letter-spacing: 0.03em; font-family: var(--mono); margin-top: 0.3rem; display: block; }
+
+  .icf-visual {
+    aspect-ratio: 1/1; border-radius: 24px; border: 1px solid var(--line); position: relative; overflow: hidden;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.6);
+  }
+  .icf-visual img { width: 100%; height: 100%; object-fit: cover; }
+  .icf-visual .ring { position: absolute; border-radius: 50%; border: 2px solid rgba(0,245,212,0.4); pointer-events: none; }
+  .icf-visual .r1 { width: 70%; height: 70%; top: 15%; left: 15%; animation: spinSlow 28s linear infinite; }
+  .icf-visual .r2 { width: 46%; height: 46%; top: 27%; left: 27%; border-color: rgba(255,46,126,0.45); animation: spinSlow 18s linear infinite reverse; }
+  @keyframes spinSlow { to { transform: rotate(360deg); } }
+
+  /* Gallery Grid & Lightbox */
+  .gallery-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 3rem;
+  }
+  .gallery-item {
+    position: relative; border-radius: 18px; overflow: hidden; aspect-ratio: 4/3;
+    border: 1px solid var(--line); cursor: pointer; transition: all 0.35s ease;
+  }
+  .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+  .gallery-item:hover img { transform: scale(1.08); }
+  .gallery-overlay {
+    position: absolute; inset: 0; background: linear-gradient(0deg, rgba(11,5,29,0.85) 0%, transparent 60%);
+    opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: flex-end; padding: 1.2rem;
+  }
+  .gallery-item:hover .gallery-overlay { opacity: 1; }
+  .gallery-caption { font-size: 0.85rem; font-weight: 600; color: var(--foam); }
+  .gallery-tag { font-family: var(--mono); font-size: 0.7rem; color: var(--electric); text-transform: uppercase; margin-bottom: 0.2rem; }
+
+  /* Modal Lightbox */
+  .lightbox-modal {
+    position: fixed; inset: 0; z-index: 200; background: rgba(11, 5, 29, 0.94); backdrop-filter: blur(16px);
+    display: none; align-items: center; justify-content: center; padding: 2rem;
+  }
+  .lightbox-modal.active { display: flex; }
+  .lightbox-content { max-width: 900px; width: 100%; position: relative; }
+  .lightbox-content img { width: 100%; max-height: 80vh; object-fit: contain; border-radius: 16px; border: 1px solid var(--line); }
+  .lightbox-close {
+    position: absolute; top: -40px; right: 0; background: none; color: var(--foam); font-size: 2rem; cursor: pointer;
+  }
+
+  /* Interactive Quote Estimator Modal */
+  .modal-backdrop {
+    position: fixed; inset: 0; z-index: 250; background: rgba(11, 5, 29, 0.88); backdrop-filter: blur(14px);
+    display: none; align-items: center; justify-content: center; padding: 1.5rem;
+  }
+  .modal-backdrop.active { display: flex; }
+  .quote-card {
+    background: var(--night2); border: 1px solid var(--card-border); border-radius: 24px;
+    max-width: 650px; width: 100%; padding: 2.5rem; position: relative;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.8); max-height: 90vh; overflow-y: auto;
+  }
+  .quote-card h3 { font-family: var(--display); font-size: 1.8rem; color: var(--foam); margin-bottom: 0.5rem; }
+  .quote-card p { font-size: 0.9rem; color: var(--foam-muted); margin-bottom: 1.5rem; }
+  
+  .form-group { margin-bottom: 1.2rem; }
+  .form-group label { display: block; font-family: var(--mono); font-size: 0.78rem; text-transform: uppercase; color: var(--electric); margin-bottom: 0.5rem; }
+  .form-control {
+    width: 100%; padding: 0.85rem 1.1rem; border-radius: 12px; background: rgba(255,255,255,0.06);
+    border: 1px solid var(--line); color: var(--foam); font-family: var(--body); font-size: 0.92rem;
+    outline: none; transition: border-color 0.3s;
+  }
+  .form-control:focus { border-color: var(--electric); background: rgba(0,245,212,0.05); }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+  .estimate-box {
+    background: rgba(0, 245, 212, 0.08); border: 1px solid rgba(0, 245, 212, 0.3); border-radius: 14px;
+    padding: 1.2rem; margin: 1.5rem 0; text-align: center;
+  }
+  .estimate-box b { font-family: var(--display); font-size: 1.6rem; color: var(--electric); display: block; }
+  .close-modal-btn { position: absolute; top: 1.5rem; right: 1.5rem; background: none; color: var(--foam-muted); font-size: 1.6rem; cursor: pointer; }
+
+  /* Service Area Chips */
+  .chips { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; max-width: 900px; margin: 2rem auto 0; }
+  .chip {
+    font-family: var(--mono); font-size: 0.82rem; letter-spacing: 0.03em; padding: 0.65rem 1.2rem;
+    border: 1px solid var(--line); border-radius: 999px; color: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.03); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .chip:hover {
+    transform: translateY(-4px) scale(1.05); border-color: var(--electric); color: var(--night);
+    background: linear-gradient(100deg, var(--electric), var(--gold)); font-weight: 700;
+    box-shadow: 0 10px 20px -5px rgba(0,245,212,0.4);
+  }
+
+  /* FAQ Accordion */
+  .faq-accordion { max-width: 850px; margin: 3rem auto 0; }
+  .faq-item {
+    background: var(--card-bg); border: 1px solid var(--line); border-radius: 16px;
+    margin-bottom: 1rem; overflow: hidden; transition: border-color 0.3s;
+  }
+  .faq-item:hover { border-color: rgba(0,245,212,0.4); }
+  .faq-question {
+    padding: 1.4rem 1.8rem; font-family: var(--display); font-size: 1.15rem; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; cursor: pointer;
+  }
+  .faq-answer {
+    padding: 0 1.8rem 1.4rem; color: var(--foam-muted); font-size: 0.95rem; line-height: 1.65; display: none;
+  }
+  .faq-item.active .faq-answer { display: block; }
+  .faq-item.active .faq-question { color: var(--electric); }
+  .faq-toggle { font-size: 1.4rem; transition: transform 0.3s; }
+  .faq-item.active .faq-toggle { transform: rotate(45deg); }
+
+  /* CTA Band */
+  .cta-band { position: relative; text-align: center; padding: 8.5rem 6vw; overflow: hidden; }
+  .cta-band .glow {
+    position: absolute; width: 65vw; height: 65vw; left: 50%; top: -15%; transform: translateX(-50%);
+    background: radial-gradient(circle, rgba(255,46,126,0.25), transparent 60%);
+    animation: blobMove 14s ease-in-out infinite; pointer-events: none;
+  }
+  .cta-band h2 { max-width: 22ch; margin: 0 auto; position: relative; }
+  .cta-band .hero-cta { justify-content: center; margin-top: 2.5rem; position: relative; }
+  .btn-solid.big { padding: 1.25rem 2.8rem; font-size: 0.92rem; }
+  
+  .btn-solid.big::after {
+    content: ''; position: absolute; inset: -4px; border-radius: 999px; z-index: -1;
+    background: linear-gradient(100deg, var(--pink), var(--electric));
+    filter: blur(20px); opacity: 0.6; animation: pulseGlow 2.5s ease-in-out infinite;
+  }
+  @keyframes pulseGlow { 0%,100%{ opacity: 0.35; } 50%{ opacity: 0.75; } }
+
+  /* Footer */
+  footer {
+    padding: 4rem 6vw 2.5rem; border-top: 1px solid var(--line); z-index: 2; position: relative;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2.5rem;
+    font-size: 0.88rem; color: rgba(255,255,255,0.65); background: rgba(11, 5, 29, 0.95);
+  }
+  footer .fcol h4 { font-family: var(--display); color: var(--foam); font-size: 1.1rem; margin-bottom: 1rem; }
+  footer .fcol p { margin-bottom: 0.5rem; }
+  footer a:hover { color: var(--electric); }
+  .footer-bottom {
+    width: 100%; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 2rem; margin-top: 1.5rem;
+    display: flex; justify-content: space-between; flex-wrap: wrap; font-size: 0.78rem; font-family: var(--mono);
+  }
+
+  /* Fixed Floating Quick Call / Quote Button */
+  .floating-contact {
+    position: fixed; bottom: 2rem; right: 2rem; z-index: 90;
+    display: flex; flex-direction: column; gap: 0.8rem;
+  }
+  .float-btn {
+    width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, var(--electric), var(--pink));
+    display: flex; align-items: center; justify-content: center; color: var(--night); font-size: 1.4rem;
+    box-shadow: 0 10px 25px rgba(0,245,212,0.4); cursor: pointer; transition: transform 0.3s;
+  }
+  .float-btn:hover { transform: scale(1.1); }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="aurora"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+<div class="grain"></div>
+
+<!-- Navigation -->
+<nav id="mainNav">
+  <div class="logo">
+    <div class="logo-mark"></div>
+    Backyard <span>Oasis</span>
+  </div>
+  <div class="navlinks" id="navLinks">
+    <a href="#services">Services</a>
+    <a href="#compare">Results</a>
+    <a href="#ecofinish">EcoFinish</a>
+    <a href="#icf">ICF Builds</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#area">Service Area</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:9124646661" class="phone-link">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      912-464-6661
+    </a>
+    <button class="nav-cta" onclick="openQuoteModal(); ripple(event)">Get Quote</button>
+    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow"><span class="pulse"></span> EcoFinish Certified &amp; ICF Construction · Golden Isles &amp; NE Florida</span>
+      <h1 class="hero-title">
+        <span class="word" style="animation-delay:.15s">Your</span>
+        <span class="word" style="animation-delay:.25s">pool,</span>
+        <span class="word" style="animation-delay:.35s"><em>reborn</em></span>
+        <span class="word" style="animation-delay:.45s">—</span>
+        <span class="word" style="animation-delay:.55s">outperforming</span>
+        <span class="word" style="animation-delay:.65s">new.</span>
+      </h1>
+      <p class="hero-sub">Specializing in high-performance EcoFinish (polyFIBRO &amp; aquaBRIGHT) pool resurfacing and custom ICF pool construction. Built to outlast plaster, eliminate staining, and shine for decades.</p>
+      
+      <div class="hero-cta">
+        <button class="btn btn-solid" onclick="openQuoteModal(); ripple(event)">Request Instant Quote</button>
+        <a class="btn btn-ghost" href="#compare" onclick="ripple(event)">See Transformation</a>
+      </div>
+
+      <div class="hero-badges">
+        <div class="hero-badge-item">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z"/></svg>
+          10-Yr EcoFinish Warranty
+        </div>
+        <div class="hero-badge-item">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          Fiberglass &amp; Gunite Shells
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <img src="images/site_image_21.jpg" alt="Completed EcoFinish Pool in Golden Isles, GA">
+      <div class="tag">
+        <div>
+          <b>EcoFinish Certified Master Installer</b>
+          <span style="font-size: 0.78rem; opacity: 0.8; font-family: var(--mono);">Completed Project · St. Simons Island, GA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span class="dot"></span> Scroll to explore services</div>
+</section>
+
+<!-- Wave Divider -->
+<div class="divider">
+  <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="waveGrad1" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#140A33"/>
+        <stop offset="100%" stop-color="#0B051D"/>
+      </linearGradient>
+    </defs>
+    <path fill="url(#waveGrad1)" d="M0,50 C240,110 480,0 720,50 C960,110 1200,0 1440,50 L1440,140 L0,140 Z"></path>
+  </svg>
+</div>
+
+<!-- Services Section -->
+<section class="services" id="services">
+  <div class="section-head reveal">
+    <span class="kicker">Core Specialization</span>
+    <h2>Advanced pool refinishing &amp; engineered construction</h2>
+    <p class="lede">We don't just patch pool surfaces — we reconstruct pool finishes from the substrate up using thermally sprayed EcoFinish polymers engineered specifically for fiberglass and concrete shells.</p>
+  </div>
+
+  <div class="card-grid">
+    <div class="card reveal">
+      <div class="card-inner">
+        <div>
+          <span class="num">01 / FIBERGLASS REFINISHING</span>
+          <h3>polyFIBRO®</h3>
+          <p>A engineered polymer finish specifically formulated for fiberglass shells. Moves dynamically with the fiberglass pool wall without cracking, peeling, or chipping.</p>
+        </div>
+        <ul class="card-features">
+          <li>Flexible memory polymer technology</li>
+          <li>Chemical &amp; stain resistant barrier</li>
+          <li>Fades far less than standard gelcoat</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-inner">
+        <div>
+          <span class="num">02 / GUNITE &amp; CONCRETE</span>
+          <h3>aquaBRIGHT™</h3>
+          <p>A high-performance mineral finish for concrete and plaster pools. Eliminates mottling, calcium scaling, and chemical etching associated with traditional pool plaster.</p>
+        </div>
+        <ul class="card-features">
+          <li>Cures instantly — fill with water same day</li>
+          <li>Smooth to touch — gentle on feet</li>
+          <li>pH neutral finish uses fewer chemicals</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-inner">
+        <div>
+          <span class="num">03 / GROUND-UP CUSTOM BUILDS</span>
+          <h3>ICF Construction</h3>
+          <p>Custom pools constructed with Insulated Concrete Forms (ICF). Provides structural reinforcement, energy thermal insulation, and unmatched shape precision.</p>
+        </div>
+        <ul class="card-features">
+          <li>50% higher insulation efficiency</li>
+          <li>Ultra-reinforced steel &amp; concrete wall</li>
+          <li>Select custom builds with full attention</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Before & After Comparison -->
+<section id="compare">
+  <div class="compare-wrap">
+    <div class="compare reveal" id="compareBox">
+      <div class="before">
+        <img src="images/site_image_24.jpg" alt="Worn, faded pool shell before refinishing">
+        <span class="label">Before Refinish</span>
+      </div>
+      <div class="after">
+        <img src="images/site_image_21.jpg" alt="Completed EcoFinish aquaBRIGHT pool refinish">
+        <span class="label">After — EcoFinish aquaBRIGHT</span>
+      </div>
+      <div class="handle" id="handle"></div>
+    </div>
+
+    <div class="compare-copy reveal">
+      <span class="kicker">Drag Slider to Compare</span>
+      <h2>Same pool shell. Unbelievable finish.</h2>
+      <p>Traditional pool plaster degrades within 5 to 7 years in coastal climates. Our EcoFinish flame-spray process bonds directly to the underlying shell, forming a non-porous finish that resists algae growth, chemical degradation, and color fading.</p>
+      <div class="badge-tag">⚡ Ready for water filling immediately upon application</div>
+    </div>
+  </div>
+</section>
+
+<!-- EcoFinish Color Swatch Showcase -->
+<section id="ecofinish">
+  <div class="color-showcase reveal">
+    <div class="color-grid">
+      <div>
+        <span class="kicker">EcoFinish Finishes</span>
+        <h2>Choose your oasis color profile</h2>
+        <p class="lede">EcoFinish comes in a variety of vibrant aquatic hues engineered to retain color brilliance under harsh sun and saltwater exposure.</p>
+        
+        <div class="swatch-group" id="swatchGroup">
+          <button class="swatch-btn active" data-img="images/site_image_21.jpg" data-title="Blue Lagoon" data-desc="Deep vibrant ocean blue with shimmering sparkle particles.">
+            <span class="circle" style="background:#0077b6;"></span> Blue Lagoon
+          </button>
+          <button class="swatch-btn" data-img="images/site_image_22.jpg" data-title="Mediterranean Blue" data-desc="Classic crisp sky blue reminiscent of luxury Mediterranean resorts.">
+            <span class="circle" style="background:#00b4d8;"></span> Mediterranean
+          </button>
+          <button class="swatch-btn" data-img="images/site_image_23.jpg" data-title="French Gray" data-desc="Sleek modern gray undertone producing natural aqua water color.">
+            <span class="circle" style="background:#6c757d;"></span> French Gray
+          </button>
+          <button class="swatch-btn" data-img="images/site_image_25.jpg" data-title="Kona Coast" data-desc="Rich dark midnight granite tone creating dramatic reflections.">
+            <span class="circle" style="background:#2b2d42;"></span> Kona Coast
+          </button>
+        </div>
+      </div>
+
+      <div class="color-preview-card">
+        <img id="colorPreviewImg" src="images/site_image_21.jpg" alt="EcoFinish Color Preview">
+        <div class="color-info-overlay">
+          <div>
+            <h4 id="colorPreviewTitle" style="font-family:var(--display); font-size:1.3rem;">Blue Lagoon</h4>
+            <p id="colorPreviewDesc" style="font-size:0.82rem; color:var(--foam-muted);">Deep vibrant ocean blue with shimmering sparkle particles.</p>
+          </div>
+          <span style="font-family:var(--mono); font-size:0.75rem; color:var(--electric);">polyFIBRO / aquaBRIGHT</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ICF Pool Construction Section -->
+<section class="icf" id="icf">
+  <div class="icf-panel reveal">
+    <div class="icf-inner">
+      <div>
+        <span class="kicker">Engineered New Construction</span>
+        <h2>Precision ICF Pool Construction</h2>
+        <p class="lede">We build a limited number of custom ground-up pools utilizing Insulated Concrete Forms (ICF). By combining high-density EPS insulation with solid poured reinforced concrete, ICF pools provide unprecedented structural integrity and thermal energy savings.</p>
+        
+        <div class="stat-row">
+          <div class="stat">
+            <b>+50%</b>
+            <span>Thermal Efficiency</span>
+          </div>
+          <div class="stat">
+            <b>100%</b>
+            <span>Monolithic Steel Reinforced</span>
+          </div>
+          <div class="stat">
+            <b>10-Yr</b>
+            <span>Surface Warranty</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="icf-visual">
+        <img src="images/site_image_27.jpg" alt="ICF Pool Construction In Progress">
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Real Project Gallery Section -->
+<section id="gallery">
+  <div class="section-head reveal">
+    <span class="kicker">Real Project Portfolio</span>
+    <h2>Completed pool refinishing &amp; ICF projects</h2>
+    <p class="lede">Browse photos of real backyard pool transformations performed by Backyard Oasis Pools across Coastal Georgia and Northeast Florida.</p>
+  </div>
+
+  <div class="gallery-grid reveal">
+    <div class="gallery-item" onclick="openLightbox('images/site_image_21.jpg', 'St. Simons Island, GA', 'Full EcoFinish Resurfacing')">
+      <img src="images/site_image_21.jpg" alt="Completed Pool Refinish">
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-tag">polyFIBRO Finish</div>
+          <div class="gallery-caption">St. Simons Island, GA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" onclick="openLightbox('images/site_image_22.jpg', 'Brunswick, GA', 'Gunite Shell Preparation & Resurface')">
+      <img src="images/site_image_22.jpg" alt="Gunite Pool Resurfacing">
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-tag">aquaBRIGHT Finish</div>
+          <div class="gallery-caption">Brunswick, GA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" onclick="openLightbox('images/site_image_23.jpg', 'Fernandina Beach, FL', 'French Gray EcoFinish Application')">
+      <img src="images/site_image_23.jpg" alt="Fiberglass Pool Refinishing">
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-tag">polyFIBRO Finish</div>
+          <div class="gallery-caption">Fernandina Beach, FL</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" onclick="openLightbox('images/site_image_25.jpg', 'Jekyll Island, GA', 'Mediterranean Blue Refinish')">
+      <img src="images/site_image_25.jpg" alt="Refinished Pool Jekyll Island">
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-tag">aquaBRIGHT Finish</div>
+          <div class="gallery-caption">Jekyll Island, GA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" onclick="openLightbox('images/site_image_27.jpg', 'Darien, GA', 'Custom ICF Formed Pool Wall Structure')">
+      <img src="images/site_image_27.jpg" alt="ICF Pool Construction">
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-tag">ICF Construction</div>
+          <div class="gallery-caption">Darien, GA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" onclick="openLightbox('images/site_image_28.jpg', 'Jacksonville, FL', 'Reinforced ICF Pool Shell')">
+      <img src="images/site_image_28.jpg" alt="ICF Pool Framing">
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-tag">ICF Framing</div>
+          <div class="gallery-caption">Jacksonville, FL</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" onclick="openLightbox('images/site_image_29.jpg', 'St. Marys, GA', 'Deep Blue EcoFinish Resurfacing')">
+      <img src="images/site_image_29.jpg" alt="Resurfaced Fiberglass Pool">
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-tag">polyFIBRO Finish</div>
+          <div class="gallery-caption">St. Marys, GA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" onclick="openLightbox('images/site_image_30.jpg', 'Kingsland, GA', 'Completed Gunite Oasis Pool')">
+      <img src="images/site_image_30.jpg" alt="Finished Gunite Pool">
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-tag">aquaBRIGHT Finish</div>
+          <div class="gallery-caption">Kingsland, GA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" onclick="openLightbox('images/site_image_31.jpg', 'Sea Island, GA', 'Luxury EcoFinish Resurface')">
+      <img src="images/site_image_31.jpg" alt="Sea Island EcoFinish Pool">
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-tag">polyFIBRO Finish</div>
+          <div class="gallery-caption">Sea Island, GA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" onclick="openLightbox('images/site_image_34.jpg', 'Golden Isles, GA', 'Resurfaced Custom Gunite Pool')">
+      <img src="images/site_image_34.jpg" alt="Resurfaced Gunite Pool">
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-tag">aquaBRIGHT Finish</div>
+          <div class="gallery-caption">Golden Isles, GA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" onclick="openLightbox('images/site_image_35.jpg', 'Woodbine, GA', 'Fiberglass Shell Polymer Coating')">
+      <img src="images/site_image_35.jpg" alt="Fiberglass Shell Coating">
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-tag">polyFIBRO Finish</div>
+          <div class="gallery-caption">Woodbine, GA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item" onclick="openLightbox('images/site_image_41.jpg', 'Folkston, GA', 'Completed Custom Oasis Build')">
+      <img src="images/site_image_41.jpg" alt="Completed Custom Build">
+      <div class="gallery-overlay">
+        <div>
+          <div class="gallery-tag">ICF &amp; EcoFinish</div>
+          <div class="gallery-caption">Folkston, GA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Frequently Asked Questions -->
+<section id="faq">
+  <div class="section-head center reveal">
+    <span class="kicker">Got Questions?</span>
+    <h2>Frequently Asked Questions</h2>
+  </div>
+
+  <div class="faq-accordion reveal">
+    <div class="faq-item active">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        What makes EcoFinish better than traditional pool plaster or paint?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        EcoFinish is a thermally applied polymer finish that creates a non-porous, smooth, and flexible membrane over your pool shell. Unlike traditional pool plaster which chips, discolors, and degrades in 5-7 years, EcoFinish is chemical resistant, pH neutral, stain-resistant, and backed by a 10-year manufacturer warranty.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        How long does it take before we can fill the pool with water?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        Immediately! Unlike plaster finishes that require a 28-day curing cycle and strict acid washing routines, EcoFinish cures instantly as it is applied. As soon as application is finished, water filling can begin right away.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        What is an ICF Pool, and why choose ICF construction?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        ICF stands for Insulated Concrete Forms. We assemble interlocking expanded polystyrene forms reinforced with steel rebars, then pour concrete inside. This creates perfectly straight, ultra-strong pool walls with built-in R-value insulation, keeping pool water warmer and lowering heating costs.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        Can EcoFinish be applied to fiberglass pools?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        Yes! We use polyFIBRO®, specifically engineered for fiberglass pools. It bonds directly to gelcoat or repaired fiberglass, expanding and flexing with the pool structure to prevent cracking.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Service Area Chips Section -->
+<section class="area" id="area">
+  <div class="section-head center reveal">
+    <span class="kicker">Local Coverage</span>
+    <h2>Proudly serving Coastal GA &amp; NE Florida</h2>
+    <p class="lede">We cover over 14 communities across Southeast Georgia and Northeast Florida.</p>
+  </div>
+
+  <div class="chips reveal">
+    <span class="chip">Darien, GA</span>
+    <span class="chip">Brunswick, GA</span>
+    <span class="chip">St. Simons Island, GA</span>
+    <span class="chip">Jekyll Island, GA</span>
+    <span class="chip">Waverly, GA</span>
+    <span class="chip">Woodbine, GA</span>
+    <span class="chip">Kingsland, GA</span>
+    <span class="chip">St. Marys, GA</span>
+    <span class="chip">Folkston, GA</span>
+    <span class="chip">Yulee, FL</span>
+    <span class="chip">Fernandina Beach, FL</span>
+    <span class="chip">Callahan, FL</span>
+    <span class="chip">Jacksonville, FL</span>
+    <span class="chip">Orange Park, FL</span>
+  </div>
+</section>
+
+<!-- CTA Band -->
+<section class="cta-band" id="contact">
+  <div class="glow"></div>
+  <span class="kicker">Start Your Transformation</span>
+  <h2 class="reveal">Ready to give your pool a permanent, stunning upgrade?</h2>
+  <div class="hero-cta">
+    <a class="btn btn-solid big" href="tel:9124646661" onclick="ripple(event)">Call 912-464-6661</a>
+    <button class="btn btn-ghost" onclick="openQuoteModal(); ripple(event)">Get Online Estimate</button>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="fcol">
+    <h4>Backyard Oasis Pools LLC</h4>
+    <p>Fiberglass &amp; gunite pool refinishing specialists.</p>
+    <p>Certified EcoFinish Applicators &amp; ICF Builders.</p>
+  </div>
+
+  <div class="fcol">
+    <h4>Direct Contact</h4>
+    <p>Phone: <a href="tel:9124646661">912-464-6661</a></p>
+    <p>Email: <a href="mailto:backyard_oasis_pools@hotmail.com">backyard_oasis_pools@hotmail.com</a></p>
+    <p>Location: Darien / Brunswick / Golden Isles, GA</p>
+  </div>
+
+  <div class="fcol">
+    <h4>Quick Links</h4>
+    <p><a href="#services">Services</a></p>
+    <p><a href="#ecofinish">EcoFinish Systems</a></p>
+    <p><a href="#icf">ICF Pool Construction</a></p>
+    <p><a href="https://ecofinishcoatings.com/" target="_blank" rel="noopener">Official EcoFinish Website ↗</a></p>
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; 2026 Backyard Oasis Pools LLC. All Rights Reserved.</span>
+    <span>Powered by EcoFinish® polyFIBRO &amp; aquaBRIGHT</span>
+  </div>
+</footer>
+
+<!-- Lightbox Modal -->
+<div class="lightbox-modal" id="lightboxModal">
+  <div class="lightbox-content">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <img id="lightboxImg" src="" alt="Full view">
+    <div style="margin-top: 1rem; color: var(--foam);">
+      <h3 id="lightboxTitle" style="font-family: var(--display); font-size: 1.3rem;"></h3>
+      <p id="lightboxSub" style="font-size: 0.85rem; color: var(--electric); font-family: var(--mono);"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Interactive Instant Quote Modal -->
+<div class="modal-backdrop" id="quoteModal">
+  <div class="quote-card">
+    <button class="close-modal-btn" onclick="closeQuoteModal()">&times;</button>
+    <h3>Get Your Pool Quote Estimate</h3>
+    <p>Select your pool options below to calculate a project estimate and request a formal site inspection.</p>
+
+    <form onsubmit="handleQuoteSubmit(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Service Required</label>
+          <select class="form-control" id="serviceType" onchange="calculateEstimate()">
+            <option value="fiberglass">Fiberglass Pool Refinishing (polyFIBRO)</option>
+            <option value="gunite">Gunite/Concrete Resurfacing (aquaBRIGHT)</option>
+            <option value="icf">New ICF Custom Pool Construction</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Estimated Pool Size</label>
+          <select class="form-control" id="poolSize" onchange="calculateEstimate()">
+            <option value="small">Small (Up to 12' x 24')</option>
+            <option value="medium" selected>Medium (15' x 30')</option>
+            <option value="large">Large (20' x 40'+)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" class="form-control" placeholder="John Smith" required>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" class="form-control" placeholder="(912) 555-0199" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-group">
+          <label>City / Location</label>
+          <input type="text" class="form-control" placeholder="e.g. St. Simons Island, GA" required>
+        </div>
+      </div>
+
+      <div class="estimate-box">
+        <span style="font-size: 0.78rem; font-family: var(--mono); color: rgba(255,255,255,0.7); text-transform: uppercase;">Estimated Investment Range</span>
+        <b id="estimateResult">$7,500 - $9,500</b>
+      </div>
+
+      <button type="submit" class="btn btn-solid" style="width:100%;">Submit Quote Request</button>
+    </form>
+  </div>
+</div>
+
+<!-- Floating Quick Call & Quote Buttons -->
+<div class="floating-contact">
+  <a href="tel:9124646661" class="float-btn" title="Call Now">
+    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+  </a>
+</div>
+
+<script>
+  // Navbar scroll effect
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  });
+
+  // Mobile nav toggle
+  function toggleMobileNav() {
+    document.getElementById('navLinks').classList.toggle('mobile-open');
+  }
+
+  // Scroll reveal observer
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Button Ripple Effect
+  function ripple(e) {
+    const btn = e.currentTarget;
+    const circle = document.createElement('span');
+    const rect = btn.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    circle.style.width = circle.style.height = size + 'px';
+    circle.style.left = (e.clientX - rect.left - size / 2) + 'px';
+    circle.style.top = (e.clientY - rect.top - size / 2) + 'px';
+    circle.className = 'ripple';
+    btn.appendChild(circle);
+    setTimeout(() => circle.remove(), 650);
+  }
+
+  // Before / After Slider Logic
+  const compareBox = document.getElementById('compareBox');
+  const afterLayer = compareBox.querySelector('.after');
+  const handle = document.getElementById('handle');
+  let dragging = false;
+
+  function setSlide(clientX) {
+    const rect = compareBox.getBoundingClientRect();
+    let pct = ((clientX - rect.left) / rect.width) * 100;
+    pct = Math.min(96, Math.max(4, pct));
+    afterLayer.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+    handle.style.left = pct + '%';
+  }
+
+  compareBox.addEventListener('mousedown', (e) => { dragging = true; setSlide(e.clientX); });
+  window.addEventListener('mousemove', (e) => { if (dragging) setSlide(e.clientX); });
+  window.addEventListener('mouseup', () => dragging = false);
+  compareBox.addEventListener('touchstart', (e) => { dragging = true; setSlide(e.touches[0].clientX); });
+  compareBox.addEventListener('touchmove', (e) => { if (dragging) setSlide(e.touches[0].clientX); });
+  window.addEventListener('touchend', () => dragging = false);
+
+  // EcoFinish Swatch Switcher
+  const swatchBtns = document.querySelectorAll('.swatch-btn');
+  const colorPreviewImg = document.getElementById('colorPreviewImg');
+  const colorPreviewTitle = document.getElementById('colorPreviewTitle');
+  const colorPreviewDesc = document.getElementById('colorPreviewDesc');
+
+  swatchBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      swatchBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      colorPreviewImg.src = btn.dataset.img;
+      colorPreviewTitle.innerText = btn.dataset.title;
+      colorPreviewDesc.innerText = btn.dataset.desc;
+    });
+  });
+
+  // Lightbox Modal Logic
+  function openLightbox(imgSrc, title, sub) {
+    document.getElementById('lightboxImg').src = imgSrc;
+    document.getElementById('lightboxTitle').innerText = title;
+    document.getElementById('lightboxSub').innerText = sub;
+    document.getElementById('lightboxModal').classList.add('active');
+  }
+  function closeLightbox() {
+    document.getElementById('lightboxModal').classList.remove('active');
+  }
+
+  // Quote Modal & Cost Estimator
+  function openQuoteModal() {
+    document.getElementById('quoteModal').classList.add('active');
+    calculateEstimate();
+  }
+  function closeQuoteModal() {
+    document.getElementById('quoteModal').classList.remove('active');
+  }
+
+  function calculateEstimate() {
+    const service = document.getElementById('serviceType').value;
+    const size = document.getElementById('poolSize').value;
+    let baseMin = 6000, baseMax = 8000;
+
+    if (service === 'fiberglass') { baseMin = 6500; baseMax = 8500; }
+    else if (service === 'gunite') { baseMin = 7500; baseMax = 10500; }
+    else if (service === 'icf') { baseMin = 45000; baseMax = 75000; }
+
+    if (size === 'medium') { baseMin *= 1.25; baseMax *= 1.25; }
+    else if (size === 'large') { baseMin *= 1.6; baseMax *= 1.6; }
+
+    const formattedMin = '$' + Math.round(baseMin).toLocaleString();
+    const formattedMax = '$' + Math.round(baseMax).toLocaleString();
+    document.getElementById('estimateResult').innerText = `${formattedMin} - ${formattedMax}`;
+  }
+
+  function handleQuoteSubmit(e) {
+    e.preventDefault();
+    alert('Thank you! Your quote request has been sent. Backyard Oasis Pools will contact you shortly.');
+    closeQuoteModal();
+  }
+
+  // FAQ Accordion Toggle
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    item.classList.toggle('active');
+  }
+</script>
+</body>
+</html>
